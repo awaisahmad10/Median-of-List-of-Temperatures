@@ -1,8 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 # # Computing 7 Assignment
-# 
+# Student code begins at line 150.
 # 
 
 # ---
@@ -13,29 +10,24 @@
 # A set of daily temperature data will be provided to you as a *list* of strings. For example:
 # 
 # <br>
-# <center><code>temps = ["5","-1.0","1.1","None","9","NA","1.0"]</code></center>
+# temps = ["5","-1.0","1.1","None","9","NA","1.0"]
 # <br>
 # 
 # Note that the temperature may not be recorded on some days. A sequence of characters that cannot be represented as a number indicate that the temperature was not recorded on a given day. In the previous example, we can see that the strings "None" and "NA" were used to represent days where the temperature was not recorded. It is important to note that these strings can consist of any characters and can vary in length. Some more examples would be "" (the empty string), "Nothing", "Not recorded", "Forgot", etc.
 # 
 # To calculate the median temperature for a given set of data, we first need to convert the data to a list of numbers. The data converted from the *temps* list is given below. Notice how the days that did not have a recorded temperature were ignored:
 # 
-# <br>
-# <center><code>temps_extracted=[5.0,-1.0,1.1,9.0,1.0]</code></center>
-# <br>
+# temps_extracted=[5.0,-1.0,1.1,9.0,1.0]
 # 
 # How would we calculate the median of our list? Recall that the median is a value separating the higher half from the lower half of a list of sorted values. In the case where the length of our list of numbers is odd, the median is the middle element in our list. In the case where the length of our list of numbers is even, the median can be found by taking the average of the two center most elements. 
 # 
 # We cannot calculate the median until we sort our values. Our sorted temperatures will look as follows:
 # 
 # 
-# <br>
-# <center><code>temps_sorted=[-1.0,1.0,1.1,5.0,9.0]</code></center>
-# <br>
+# temps_sorted=[-1.0,1.0,1.1,5.0,9.0]
 #   
 #     
 # Now that our list is sorted, we can see that the median in this case is **1.1**.
-# <br>
 # 
 # ---
 #     
@@ -43,12 +35,9 @@
 # <br>
 #     
 # Say we have a list named *nums*. The main idea of selection sort is that we want to start iterating over our list *nums* from i = 0 to the length of our list minus 1 (n-1), choosing the smallest element in the sub list from *nums[i]* to *nums[n-1]* and placing it in *nums[i]* on each iteration. If you are confused, don't worry! We have provided you the pseudocode for the algorithm. Before looking at the pseudocode, use the following example to gain some intuition about how selection sort works.
-# <br>
-# <br>
 # 
 # Imagine that we have the following list of numbers that need to be sorted:
 # 
-# ![alg%20%2826%29.png](attachment:alg%20%2826%29.png)
 # 
 # 
 # We start sorting at the left most item. We call our current position index i. The left most element in our list is the number 2, which occurs at i = 0.
